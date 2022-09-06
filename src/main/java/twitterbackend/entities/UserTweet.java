@@ -1,4 +1,4 @@
-package entities;
+package twitterbackend.entities;
 
 import javax.persistence.*;
 import java.time.OffsetDateTime;
@@ -24,6 +24,10 @@ public class UserTweet {
     private String language;
     @Column
     private String source;
+
+    public UserTweet() {
+
+    }
 
     public UserTweet(String id, String text, String conversationID, OffsetDateTime createdAt, String userID, String toUserID, String language, String source) {
         this.id = id;

@@ -1,6 +1,6 @@
-package repositories;
+package twitterbackend.repositories;
 
-import entities.UserTweet;
+import twitterbackend.entities.UserTweet;
 import org.springframework.data.repository.CrudRepository;
 
 public interface TweetRepository extends CrudRepository<UserTweet, Integer> {

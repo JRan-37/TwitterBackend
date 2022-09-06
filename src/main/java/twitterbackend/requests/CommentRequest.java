@@ -1,4 +1,4 @@
-package requests;
+package twitterbackend.requests;
 
 public class CommentRequest {
 }
