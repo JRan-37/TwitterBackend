@@ -1,16 +1,28 @@
-package models;
+package entities;
 
+import javax.persistence.*;
 import java.time.OffsetDateTime;
 
+@Entity
+@Table(name = "tweets")
 public class UserTweet {
 
+    @Id
+    @Column(name = "id", nullable = false)
     private String id;
+    @Column
     private String text;
+    @Column
     private String conversationID;
+    @Column
     private OffsetDateTime createdAt;
+    @Column
     private String userID;
+    @Column
     private String toUserID;
+    @Column
     private String language;
+    @Column
     private String source;
 
     public UserTweet(String id, String text, String conversationID, OffsetDateTime createdAt, String userID, String toUserID, String language, String source) {
